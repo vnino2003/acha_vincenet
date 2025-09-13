@@ -83,7 +83,7 @@
                 $errors = $this->form_validation->get_errors();
                 setErrors($errors);
                 // $_SESSION['old'] = $_POST;           //save old imput
-redirect(base_url('register'));
+redirect('/register');
 
             } else {
                
@@ -96,7 +96,7 @@ redirect(base_url('register'));
                 if($exist){
                 
                     setMessage('danger', 'Email already exist!');
-redirect(base_url('register'));
+redirect('/register');
                 }else{
                 $user_id = $this->User_Model->insert([
                 'first_name' => $_POST['first_name'], // this-io->post
@@ -112,7 +112,7 @@ redirect(base_url('register'));
                 // ]);
 
                 setMessage('success', 'User registered successfully!');
-                redirect(base_url('register'));
+                redirect('/register');
 
                 }
 
