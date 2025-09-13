@@ -96,7 +96,7 @@
                 if($exist){
                 
                     setMessage('danger', 'Email already exist!');
-redirect('/register');
+                redirect('/register');
                 }else{
                 $user_id = $this->User_Model->insert([
                 'first_name' => $_POST['first_name'], // this-io->post
