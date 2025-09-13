@@ -2,8 +2,10 @@
     RewriteEngine On
     RewriteBase /
 
+    # Skip existing files and dirs
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
 
+    # Route everything to index.php
     RewriteRule ^(.*)$ index.php/$1 [L]
 </IfModule>
