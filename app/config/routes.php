@@ -43,27 +43,27 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 |
 */
 
-$router->get('/', 'userController::login');
+$router->get('/', 'UserController::login');
 
 //User
-$router->get('/register', 'userController::registerForm');
-$router->post('/create-user', 'userController::createUser');
+$router->get('/register', 'UserController::registerForm');
+$router->post('/create-user', 'UserController::createUser');
 
 
 //admin
-$router->get('/admin', 'userController::read');
-$router->post('/admin-edit/{id}', 'userController::updateUser');
-$router->post('/admin-delete/{id}', 'userController::deleteUser');
+$router->get('/admin', 'UserController::read');
+$router->post('/admin-edit/{id}', 'UserController::updateUser');
+$router->post('/admin-delete/{id}', 'UserController::deleteUser');
 
 
 //login
-$router->get('/', 'userController::login');
-$router->post('/authenticate', 'userController::authenticate');
-$router->get('user/logout', 'userController::logout');
-$router->get('users/home', 'userController::home');
+$router->get('/', 'UserController::login');
+$router->post('/authenticate', 'UserController::authenticate');
+$router->get('user/logout', 'UserController::logout');
+$router->get('users/home', 'UserController::home');
 
 
-$router->post('/profile', 'userController::updateProfile');
+$router->post('/profile', 'UserController::updateProfile');
 
 
 //authen
