@@ -61,9 +61,9 @@ $database['main'] = array(
     'driver'	=> 'mysql',
     'hostname'	=> 'localhost',
     'port'		=> '3306',
-    'username'	=> 'root',
-    'password'	=> '',
-    'database'	=> 'crud',
+    'username'	=> 'sql12798473',
+    'password'	=> 'bEMfhxHF8l',
+    'database'	=> 'sql12798473',
     'charset'	=> 'utf8',
     'dbprefix'	=> '',
     // Optional for SQLite
