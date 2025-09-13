@@ -2,10 +2,10 @@
     RewriteEngine On
     RewriteBase /
 
-    # Skip existing files and dirs
+    # Kung file o folder talaga, wag i-rewrite
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
 
-    # Route everything to index.php
-    RewriteRule ^(.*)$ index.php/$1 [L]
+    # Lahat ng iba, ipasa kay index.php
+    RewriteRule ^(.*)$ index.php?/$1 [L]
 </IfModule>
