@@ -83,7 +83,7 @@
                 $errors = $this->form_validation->get_errors();
                 setErrors($errors);
                 // $_SESSION['old'] = $_POST;           //save old imput
-redirect(base_url('register'));
+                redirect('/index/register');
 
             } else {
                
