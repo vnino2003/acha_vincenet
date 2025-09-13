@@ -24,7 +24,7 @@
 
       <h3 class="mb-4 text-center">Register User</h3>
 
-      <form action="/create-user" method="POST">
+      <form action="<?= BASE_URL('create-user') ?>" method="POST">
         <div class="mb-3">
           <label for="first_name" class="form-label">First Name</label>
           <input type="text" class="form-control" name="first_name" required>

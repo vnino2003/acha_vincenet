@@ -137,7 +137,7 @@
 
         public function deleteUser($id){
         
-            $this->User_Model->deleteUser($id);
+            $this->User_Model->delete($id);
             setMessage('danger', 'User delete successfully!');
             redirect('/admin');      
                 
