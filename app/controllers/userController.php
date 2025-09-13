@@ -6,7 +6,7 @@
      * 
      * Automatically generated via CLI.
      */
-    class userController extends Controller {
+    class UserController extends Controller {
         public function __construct()
         {
             parent::__construct();
