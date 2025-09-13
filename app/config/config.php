@@ -213,12 +213,12 @@ $config['language'] 				= 'en-US';
 $config['sess_driver']             = 'file';
 $config['sess_cookie_name']        = 'LLSession';
 $config['sess_expiration']         = 7200;
-$config['sess_save_path']          = '';
-$config['sess_match_ip']           = TRUE;
+$config['sess_save_path']          = '/tmp';  
 $config['sess_match_fingerprint']  = TRUE;
 $config['sess_time_to_update']     = 300;
 $config['sess_regenerate_destroy'] = TRUE;
 $config['sess_expire_on_close']    = FALSE;
+
 
 /*
 |--------------------------------------------------------------------------
