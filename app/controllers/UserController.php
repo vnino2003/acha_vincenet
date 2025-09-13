@@ -83,7 +83,7 @@
                 $errors = $this->form_validation->get_errors();
                 setErrors($errors);
                 // $_SESSION['old'] = $_POST;           //save old imput
-redirect('/register');
+        redirect('/register');
 
             } else {
                
@@ -112,7 +112,7 @@ redirect('/register');
                 // ]);
 
                 setMessage('success', 'User registered successfully!');
-                redirect('/register');
+                $this->call->view('users/register');
 
                 }
 
