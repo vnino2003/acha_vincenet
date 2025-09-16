@@ -83,7 +83,7 @@
                 $errors = $this->form_validation->get_errors();
                 setErrors($errors);
                 // $_SESSION['old'] = $_POST;           //save old imput
-        redirect('/register');
+        redirect(uri: '/register');
 
             } else {
                
@@ -131,7 +131,7 @@
                 'email' => $_POST['email'],
             ]);
             setMessage('success', 'User updated successfully!');
-            redirect('/admin');
+            redirect(uri:'/admin');
 
         }
 
@@ -231,14 +231,14 @@
                             ]);
 
                             setMessage('success', 'Welcome back, ' . $user['first_name']);
-                            redirect('/users/home');
+                            redirect(uri:'/users/home');
                         } else {
                             setMessage('danger', 'Invalid password.');
-                            redirect('/');
+                            redirect(uri:'/');
                         }
                     } else {
                         setMessage('danger', 'User not found.');
-                        redirect('/');
+                        redirect(uri:'/');
                     }
                 } 
             }   
